@@ -7,12 +7,37 @@
   pointer-events: none;
 }
 
+.navbar{
+  height: 50px;
+  background-color: #282c34;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+.navbar a{
+  text-decoration: none;
+  color: #fff;
+}
+.navbar a:hover{
+  color: rgb(204, 204, 253);
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+a{
+  text-decoration: none;
+}
+button{
+   background-color: green;
+   border-radius: 5px;
+   color: #fff;
+   border:none;
+   padding: 10px 20px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,6 +53,54 @@
   color: #61dafb;
 }
 
+.banner{
+  text-align: left;
+  background-color: rgb(240, 214, 214);
+  padding: 20px 70px;
+ 
+}
+.banner h1{
+  font-size: 60px;
+}
+.banner button{
+  background-color: blue;
+}
+
+.container{
+  max-width: 100%;
+  padding: 10px 30px;
+  text-align: left;
+  display: flex;
+  opacity: 0.9;
+}
+.container button{
+  background-color: rgb(233, 233, 255);
+  color: black;
+  border:1px solid #282c34;
+  cursor: pointer;
+}
+button:hover{
+  background-color: rgb(200, 200, 255);
+  color: #000;
+  cursor: pointer;
+  transition: .5s;
+}
+.left{
+  width: 80%;
+}
+.right{
+  width: 20%;
+  padding: 0 20px;
+ background-color: rgb(224, 224, 224);
+}
+
+.tutorial{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 20px;
+  padding: 0 10px;
+  
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
